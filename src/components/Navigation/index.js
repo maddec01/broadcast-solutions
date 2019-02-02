@@ -5,7 +5,7 @@ import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
 
 const Navigation = () => (
-  <div>
+  <nav>
     <ul>
       <li>
         <Link to={ROUTES.SIGN_IN}>Sign In</Link>
@@ -26,7 +26,7 @@ const Navigation = () => (
         <SignOutButton />
       </li>
     </ul>
-  </div>
+  </nav>
 );
 
 export default Navigation;
