@@ -1,6 +1,6 @@
 @font-face {
   font-family: LogoFont;
-  src: url("./logofont.otf") format("opentype");
+  src: url("./logofont.ttf") format("opentype");
 }
 
 body {
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-top-left {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .nav-top-left a {
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-side {
   position: relative;
-  width: 200px;
+  width: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

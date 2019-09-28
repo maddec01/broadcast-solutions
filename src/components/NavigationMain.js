@@ -39,7 +39,7 @@ const NavigationNonAuth = () => (
     </div>
     <div className="nav-top-right">
       <li>
-        <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+        <Link to={ROUTES.SIGN_IN}>Login</Link>
       </li>
     </div>
   </nav>

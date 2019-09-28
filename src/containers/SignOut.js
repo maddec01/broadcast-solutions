@@ -4,7 +4,7 @@ import { withFirebase } from '../components/Firebase';
 
 const SignOutButton = ({ firebase }) => (
   <a href="/" onClick={firebase.doSignOut}>
-    Sign Out
+    Logout
   </a>
 );
 
