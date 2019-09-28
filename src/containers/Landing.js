@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Landing = () => (
-  <div>
+  <div className="content-no-side">
     <h1>Landing</h1>
   </div>
 );

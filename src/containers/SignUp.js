@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../Firebase';
-import * as ROUTES from '../../constants/routes';
-import * as ROLES from '../../constants/roles';
+import { withFirebase } from '../components/Firebase';
+import * as ROUTES from '../constants/routes';
+import * as ROLES from '../constants/roles';
 
 const SignUpPage = () => (
-  <div>
+  <div className="content-no-side">
     <h1>SignUp</h1>
     <SignUpForm />
   </div>
@@ -52,7 +52,7 @@ class SignUpFormBase extends Component {
       })
       .then(authUser => {
         this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.HOME);
+        this.props.history.push(ROUTES.DASHBOARD);
       })
       .catch(error => {
         this.setState({ error });

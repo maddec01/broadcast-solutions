@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../Firebase';
-import { withAuthorization } from '../Session';
-import * as ROLES from '../../constants/roles';
+import { withFirebase } from '../components/Firebase';
+import { withAuthorization } from '../components/Session';
+import * as ROLES from '../constants/roles';
 
 class AdminPage extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class AdminPage extends Component {
     const { users, loading } = this.state;
 
     return (
-      <div>
+      <div className="content-no-side">
         <h1>Admin</h1>
 
         <p>

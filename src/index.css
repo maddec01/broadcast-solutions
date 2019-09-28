@@ -1,3 +1,8 @@
+@font-face {
+  font-family: LogoFont;
+  src: url("./logofont.otf") format("opentype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +11,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #17242d;
+  color: #bdc2c4;
+  font-size: 14px;
 }
 
 code {
@@ -13,26 +21,106 @@ code {
     monospace;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
 }
 
-nav li {
+#root {
+  min-height: 100vh;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+/* NAVIGATION */
+.nav-top {
+  max-width: 1600px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-top li {
   float: left;
 }
 
-nav li a {
+.nav-top-right a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 5px 15px;
   text-decoration: none;
+  color: #bdc2c4;
 }
 
-nav li a:hover {
-  background-color: #111;
+.nav-top-left {
+  padding-top: 10px;
+}
+
+.nav-top-left a {
+  font-family: LogoFont;
+  text-decoration: none;
+  font-size: 2em;
+  color: #bdc2c4;
+}
+
+.nav-top-left a span:last-child {
+  color: #d66262;
+}
+
+.nav-side {
+  position: relative;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 110px);
+}
+
+.nav-side ul {
+  padding: 0;
+  margin: 10px 0 15px;
+  width: auto;
+  list-style-type: none;
+}
+
+.nav-side ul a {
+  text-decoration: none;
+  color: #bdc2c4;
+  padding: 8px 0;
+  width: 100%;
+  display: flex;
+  font-weight: 500;
+}
+
+.nav-side ul a.active,
+.nav-side ul a:hover,
+.nav-top-right a:hover {
+  color: #d66262;
+}
+
+.nav-side-group {
+  margin-bottom: 15px;
+}
+
+.nav-side-title {
+  color: #91979a;
+  margin-bottom: 5px;
+  cursor: default;
+  font-size: 12px;
+}
+
+/* CONTENT */
+.content-with-side,
+.content-no-side {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-with-side {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 32px;
 }

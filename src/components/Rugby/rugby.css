@@ -1,0 +1,88 @@
+/*
+* CONTROL PANEL
+*/
+
+#title, #team01_title, #team02_title {
+    font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+    padding-bottom: 5px;
+}
+
+#subtitle {
+    font-size: 16px;
+	font-style: normal;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+#spacer {
+    padding-bottom: 30px;
+}
+
+.ctable{
+	display: table;
+}
+
+.crow {
+	display: table-row;
+}
+
+.cbody {
+	display: table-row-group;
+}
+
+.ccell {
+    padding: 10px;
+    text-align: center;
+	width: 50px;
+	display: table-cell;
+}
+
+.buttonBIG {
+	background-color: #ededed;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+}
+
+.buttonSMALL, .jscolor {
+	background-color: #ededed;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	height: 30px;
+	width: 60px;
+	text-align: center;
+}
+
+.inputBIG {
+    border-color: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    padding: 8px; 
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+    text-align: center;
+    height: 42px;
+    width: 42px;
+}
+
+.inputSMALL {
+    border-color: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    padding: 0px; 
+	font-size:14px;
+	font-weight: bold;
+	font-style: normal;
+    text-align: center;
+    height: 28px;
+    width: 60px;
+}
